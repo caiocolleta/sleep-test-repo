@@ -1,0 +1,26 @@
+---
+title: "Sleep_test_caio"
+author: "Caio Vianna"
+date: "11/7/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+
+library(tidyverse)
+sleep <- read_csv("sleep.csv")
+
+graph_sleep <- ggplot(sleep, aes (x = gestation, y = life_span)) +
+  geom_point()
+
+graph_sleep
+
+
+
+
+```
+
